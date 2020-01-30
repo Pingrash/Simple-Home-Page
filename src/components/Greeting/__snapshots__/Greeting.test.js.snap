@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Greeting snapshot checks Renders correctly with props 1`] = `
+<div
+  className="greeting-container"
+  data-test="container"
+>
+  <h3
+    className="greeting-body"
+    data-test="greeting"
+  >
+    Good 
+    morning
+    <span
+      data-test="username"
+    >
+       
+      user
+      !
+    </span>
+  </h3>
+</div>
+`;
+
+exports[`Greeting snapshot checks Renders correctly without props 1`] = `
+<div
+  className="greeting-container"
+  data-test="container"
+>
+  <h3
+    className="greeting-body"
+    data-test="greeting"
+  >
+    Good 
+    !
+  </h3>
+</div>
+`;

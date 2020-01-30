@@ -1,0 +1,12 @@
+.greeting-container {
+  flex: 1;
+  margin: 2rem auto;
+}
+
+.greeting-body {
+  width: 100%;
+  margin: 0 auto;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 3rem;
+}

@@ -1,0 +1,13 @@
+.clock-container {
+  flex: 1;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.clock-section {
+  font-size: 2.5rem;
+}
+
+.date-section {
+  font-size: 2rem;
+}
