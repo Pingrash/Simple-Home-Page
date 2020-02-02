@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Greeting snapshot checks Renders correctly with props 1`] = `
+exports[`Greeting snapshot checks Renders correctly with username 1`] = `
 <div
   className="greeting-container"
   data-test="container"
@@ -22,7 +22,7 @@ exports[`Greeting snapshot checks Renders correctly with props 1`] = `
 </div>
 `;
 
-exports[`Greeting snapshot checks Renders correctly without props 1`] = `
+exports[`Greeting snapshot checks Renders correctly without username 1`] = `
 <div
   className="greeting-container"
   data-test="container"
@@ -32,6 +32,7 @@ exports[`Greeting snapshot checks Renders correctly without props 1`] = `
     data-test="greeting"
   >
     Good 
+    morning
     !
   </h3>
 </div>

@@ -16,8 +16,8 @@ const Clock = ({ time, date }) => {
 };
 
 Clock.propTypes = {
-  time: PropTypes.string,
-  date: PropTypes.string
+  time: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired
 };
 
 export default Clock;

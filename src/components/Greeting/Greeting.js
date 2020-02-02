@@ -19,7 +19,7 @@ const Greeting = ({ username, timeGreeting }) => {
 
 Greeting.propTypes = {
   username: PropTypes.string,
-  timeGreeting: PropTypes.string
+  timeGreeting: PropTypes.string.isRequired
 };
 
 export default Greeting;

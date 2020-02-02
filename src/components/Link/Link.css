@@ -1,0 +1,32 @@
+.link-button {
+  display: flex;
+  flex-direction: column;
+  width: 180px;
+  height: 180px;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  text-decoration: none;
+  color: black;
+  margin: 1rem;
+  box-shadow: 2px 4px lightgrey;
+}
+
+.link-button:hover {
+  background-color: #f6f6f6;
+}
+
+.link-title {
+  flex: 1;
+  text-align: center;
+  text-transform: capitalize;
+  line-height: 60px;
+  font-size: 2rem;
+  padding-top: 1rem;
+}
+
+.link-favicon {
+  flex: 1;
+  width: 1rem;
+  padding: 3rem;
+}

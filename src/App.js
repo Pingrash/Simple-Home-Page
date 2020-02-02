@@ -1,12 +1,14 @@
 import React from 'react';
 import './App.css';
 
-import TimeComponentsHandler from './handlers/TimeComponentsHandler/TimeComponentsHandler';
+import TimeHandler from './handlers/TimeHandler/TimeHandler';
+import LinkHandler from './handlers/LinksHandler/LinkHandler';
 
 const App = () => {
   return (
     <div className='App'>
-      <TimeComponentsHandler />
+      <TimeHandler />
+      <LinkHandler />
     </div>
   );
 };

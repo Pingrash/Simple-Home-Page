@@ -4,12 +4,12 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-import { TimeProvider } from './context/timeContext';
+import ProviderParent from './context/ProviderParent';
 
 ReactDOM.render(
-  <TimeProvider>
+  <ProviderParent>
     <App />
-  </TimeProvider>,
+  </ProviderParent>,
   document.getElementById('root')
 );
 

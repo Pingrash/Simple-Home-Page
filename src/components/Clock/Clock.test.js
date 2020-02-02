@@ -4,14 +4,19 @@ import renderer from 'react-test-renderer';
 import Clock from './Clock';
 import { findByDataTest, checkProps } from '../../../Utilities';
 
+const props = {
+  time: '00:00:00',
+  date: '00/00/0000'
+};
+
 // Snapshot check
 it('renders correctly', () => {
-  const tree = renderer.create(<Clock />).toJSON();
+  const tree = renderer.create(<Clock {...props} />).toJSON();
   expect(tree).toMatchSnapshot();
 });
 
 const setup = () => {
-  const component = shallow(<Clock />);
+  const component = shallow(<Clock {...props} />);
   return component;
 };
 

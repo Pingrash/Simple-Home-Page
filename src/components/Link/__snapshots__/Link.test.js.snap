@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<a
+  className="link-button"
+  data-test="link-button"
+  href="link"
+  rel="noopener noreferrer"
+  target="_blank"
+>
+  <span
+    className="link-title"
+  />
+  <img
+    alt="favicon"
+    className="link-favicon"
+    data-test="favicon"
+    src="favicon"
+  />
+</a>
+`;

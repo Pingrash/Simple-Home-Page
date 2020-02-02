@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot Should render correctly 1`] = `
+<div
+  className="link-container"
+  data-test="link-group"
+>
+  <a
+    className="link-button"
+    data-test="link-button"
+    href="link1"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    <span
+      className="link-title"
+    />
+    <img
+      alt="favicon"
+      className="link-favicon"
+      data-test="favicon"
+      src="favicon1"
+    />
+  </a>
+  <a
+    className="link-button"
+    data-test="link-button"
+    href="link2"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    <span
+      className="link-title"
+    />
+    <img
+      alt="favicon"
+      className="link-favicon"
+      data-test="favicon"
+      src="favicon2"
+    />
+  </a>
+  <a
+    className="link-button"
+    data-test="link-button"
+    href="link3"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    <span
+      className="link-title"
+    />
+    <img
+      alt="favicon"
+      className="link-favicon"
+      data-test="favicon"
+      src="favicon3"
+    />
+  </a>
+</div>
+`;

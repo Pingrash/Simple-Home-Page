@@ -6,12 +6,14 @@ import { findByDataTest, checkProps } from '../../../Utilities';
 
 // Snapshot check
 describe('Greeting snapshot checks', () => {
-  it('Renders correctly without props', () => {
-    const tree = renderer.create(<Greeting />).toJSON();
+  it('Renders correctly without username', () => {
+    const tree = renderer
+      .create(<Greeting timeGreeting='morning' />)
+      .toJSON();
     expect(tree).toMatchSnapshot();
   });
 
-  it('Renders correctly with props', () => {
+  it('Renders correctly with username', () => {
     const tree = renderer
       .create(<Greeting username='user' timeGreeting='morning' />)
       .toJSON();
@@ -19,7 +21,7 @@ describe('Greeting snapshot checks', () => {
   });
 });
 
-const setup = (props = {}) => {
+const setup = (props = { timeGreeting: 'morning' }) => {
   const component = shallow(<Greeting {...props} />);
   return component;
 };
@@ -31,7 +33,7 @@ describe('Greeting component renders correctly', () => {
   });
 
   it('Renders correct username greeting', () => {
-    const props = { username: 'user' };
+    const props = { username: 'user', timeGreeting: 'morning' };
     const wrapper = setup(props);
     const user = findByDataTest(wrapper, 'username');
     expect(user.length).toBe(1);
