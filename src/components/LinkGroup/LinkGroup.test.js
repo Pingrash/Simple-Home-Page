@@ -9,12 +9,15 @@ const setup = (props = {}) => {
   return component;
 };
 
+const testFunc = () => null;
+
 const props = {
   links: [
-    { link: 'link1', favicon: 'favicon1' },
-    { link: 'link2', favicon: 'favicon2' },
-    { link: 'link3', favicon: 'favicon3' }
-  ]
+    { link: 'link1', favicon: 'favicon1', name: 'name1' },
+    { link: 'link2', favicon: 'favicon2', name: 'name2' },
+    { link: 'link3', favicon: 'favicon3', name: 'name3' }
+  ],
+  toggleLinkSettings: testFunc
 };
 
 describe('Snapshot', () => {
@@ -45,9 +48,10 @@ describe('LinkGroup component has correct props', () => {
   it('Should not have any props errors', () => {
     const expectedProps = {
       links: [
-        { link: 'link1', favicon: 'favicon1' },
-        { link: 'link2' }
-      ]
+        { link: 'link1', favicon: 'favicon1', name: 'name1' },
+        { link: 'link2', name: 'name2' }
+      ],
+      toggleLinkSettings: testFunc
     };
 
     const propsError = checkProps(LinkGroup, expectedProps);

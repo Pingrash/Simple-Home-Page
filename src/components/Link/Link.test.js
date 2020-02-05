@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer';
 import Link from './Link';
 import { findByDataTest, checkProps } from '../../../Utilities';
 
-const props = { link: 'link', favicon: 'favicon' };
+const props = { link: 'link', favicon: 'favicon', name: 'name' };
 
 const setup = () => {
   const component = shallow(<Link {...props} />);
@@ -42,7 +42,8 @@ describe('Link component has correct props', () => {
   it('Should not have any prop errors', () => {
     const expectedProps = {
       link: 'link1',
-      favicon: 'favicon1'
+      favicon: 'favicon1',
+      name: 'name1'
     };
     const propsError = checkProps(Link, expectedProps);
     expect(propsError).toBeUndefined();

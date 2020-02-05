@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot Should match snapshot 1`] = `
+<div
+  className="card-container"
+  data-test="container"
+>
+  <img
+    alt="favicon"
+    className="card-favicon"
+    data-test="favicon"
+    src="favicon1"
+  />
+  <h4
+    className="card-title"
+    data-test="title"
+  >
+    name1
+  </h4>
+  <span
+    className="card-url"
+    data-test="url"
+  >
+    link1
+  </span>
+  <button
+    className="card-button"
+    data-test="delete-button"
+    onClick={[Function]}
+  >
+    Delete
+  </button>
+</div>
+`;

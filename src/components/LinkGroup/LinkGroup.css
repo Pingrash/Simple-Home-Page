@@ -1,7 +1,16 @@
 .link-container {
-  width: 100%;
+  width: 90%;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   flex: 1;
-  padding: 2rem 6rem;
+  margin: 2rem 6rem;
+}
+
+.toggle-button {
+  flex: 1;
+  width: 80px;
+  align-self: flex-end;
+  margin-right: 2rem;
+  font-size: 1rem;
 }

@@ -10,7 +10,9 @@ exports[` 1`] = `
 >
   <span
     className="link-title"
-  />
+  >
+    name
+  </span>
   <img
     alt="favicon"
     className="link-favicon"

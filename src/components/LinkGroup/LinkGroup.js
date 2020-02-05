@@ -4,22 +4,32 @@ import './LinkGroup.css';
 
 import Link from '../Link/Link';
 
-const LinkGroup = ({ links }) => {
+const LinkGroup = ({ links, toggleLinkSettings }) => {
   const linksToRender = links.map(link => {
     return (
       <Link
         key={link.link}
         link={link.link}
         favicon={link.favicon}
+        name={link.name}
         data-test='link'
       />
     );
   });
 
   return (
-    <div className='link-container' data-test='link-group'>
-      {linksToRender}
-    </div>
+    <>
+      <button
+        onClick={() => toggleLinkSettings(true)}
+        className='toggle-button'
+        data-test='toggle-button'
+      >
+        Settings
+      </button>
+      <div className='link-container' data-test='link-group'>
+        {linksToRender}
+      </div>
+    </>
   );
 };
 
@@ -27,9 +37,11 @@ LinkGroup.propTypes = {
   links: PropTypes.arrayOf(
     PropTypes.shape({
       link: PropTypes.string.isRequired,
-      favicon: PropTypes.string
+      favicon: PropTypes.string,
+      name: PropTypes.string.isRequired
     })
-  ).isRequired
+  ).isRequired,
+  toggleLinkSettings: PropTypes.func.isRequired
 };
 
 export default LinkGroup;

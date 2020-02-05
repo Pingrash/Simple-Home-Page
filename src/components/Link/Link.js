@@ -2,8 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './Link.css';
 
-const Link = ({ link, favicon }) => {
-  const linkTitle = link.split('.')[1];
+const Link = ({ link, favicon, name }) => {
   return (
     <a
       href={link}
@@ -12,7 +11,7 @@ const Link = ({ link, favicon }) => {
       data-test='link-button'
       className='link-button'
     >
-      <span className='link-title'>{linkTitle}</span>
+      <span className='link-title'>{name}</span>
       <img
         src={favicon}
         alt='favicon'
@@ -25,7 +24,8 @@ const Link = ({ link, favicon }) => {
 
 Link.propTypes = {
   link: PropTypes.string.isRequired,
-  favicon: PropTypes.string
+  favicon: PropTypes.string,
+  name: PropTypes.string.isRequired
 };
 
 export default Link;

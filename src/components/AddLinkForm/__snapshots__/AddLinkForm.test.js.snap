@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<form
+  className="add-form"
+  data-test="entry-form"
+  onSubmit={[Function]}
+>
+  <h3>
+    Add Link
+  </h3>
+  <label
+    for="url"
+  >
+    URL: 
+  </label>
+  <input
+    data-test="form-field"
+    defaultValue="https://"
+    id="url"
+    onChange={[Function]}
+    placeholder="https://"
+    required={true}
+    title="Website URL eg. https://www.google.com"
+    type="url"
+  />
+  <label
+    for="name"
+  >
+    Link Name: 
+  </label>
+  <input
+    data-test="form-field"
+    id="name"
+    onChange={[Function]}
+    required={true}
+  />
+  <button
+    className="submit-button"
+    data-test="submit-button"
+    type="submit"
+  >
+    Submit
+  </button>
+</form>
+`;
