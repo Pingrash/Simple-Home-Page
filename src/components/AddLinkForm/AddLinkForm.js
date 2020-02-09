@@ -1,11 +1,36 @@
 import React, { useState } from 'react';
-import './AddLinkForm.css';
 import PropTypes from 'prop-types';
+
+import FormControl from '@material-ui/core/FormControl';
+import Button from '@material-ui/core/Button';
+import Input from '@material-ui/core/Input';
+import InputLabel from '@material-ui/core/InputLabel';
+import Typography from '@material-ui/core/Typography';
+import { makeStyles } from '@material-ui/styles';
+
+const useStyles = makeStyles(theme => ({
+  submitButton: {
+    marginTop: '1rem'
+  },
+  success: {
+    color: 'green',
+    textAlign: 'center',
+    marginBottom: '1rem'
+  },
+  addForm: {
+    display: 'flex',
+    flexDirection: 'column',
+    flex: 3,
+    padding: '0 1rem 2rem'
+  }
+}));
 
 const AddLinkForm = ({ addLink }) => {
   const [url, updateUrl] = useState('');
   const [linkName, updateLinkName] = useState('');
   const [linkAdded, updateLinkAdded] = useState(false);
+
+  const classes = useStyles();
 
   return (
     <>
@@ -17,42 +42,62 @@ const AddLinkForm = ({ addLink }) => {
             favicon: `http://www.google.com/s2/favicons?domain=${url}`,
             name: linkName
           };
+          console.log(newLink);
           addLink(newLink);
           updateLinkAdded(true);
         }}
-        className='add-form'
+        className={classes.addForm}
         data-test='entry-form'
       >
-        <h3>Add Link</h3>
-        <label for='url'>URL: </label>
-        <input
-          id='url'
-          type='url'
-          onChange={e => updateUrl(e.target.value)}
-          title='Website URL eg. https://www.google.com'
-          required
-          placeholder='https://'
-          defaultValue='https://'
-          data-test='form-field'
-        />
-
-        <label for='name'>Link Name: </label>
-        <input
-          id='name'
-          onChange={e => updateLinkName(e.target.value)}
-          required
-          data-test='form-field'
-        />
-        <button
-          type='submit'
-          className='submit-button'
-          data-test='submit-button'
-        >
-          Submit
-        </button>
+        <Typography component='h4' variant='h4'>
+          Add Link
+        </Typography>
+        <FormControl>
+          <InputLabel htmlFor='url' color='primary' required>
+            Website URL:
+          </InputLabel>
+          <Input
+            id='url'
+            type='url'
+            onChange={e => updateUrl(e.target.value)}
+            autoComplete='true'
+            autoFocus
+            fullWidth
+            data-test='form-field'
+            placeholder='https://www.google.com'
+          />
+        </FormControl>
+        <FormControl>
+          <InputLabel htmlFor='name' color='primary' required>
+            Link Name:
+          </InputLabel>
+          <Input
+            id='name'
+            onChange={e => updateLinkName(e.target.value)}
+            autoComplete='true'
+            fullWidth
+            data-test='form-field'
+          />
+          <Button
+            type='submit'
+            className={classes.submitButton}
+            data-test='submit-button'
+            color='primary'
+            fullWidth
+            variant='contained'
+          >
+            Submit
+          </Button>
+        </FormControl>
       </form>
       {linkAdded ? (
-        <span className='success message'>Link Added</span>
+        <Typography
+          component='span'
+          variant='h4'
+          className={classes.success}
+        >
+          Link Added
+        </Typography>
       ) : null}
     </>
   );

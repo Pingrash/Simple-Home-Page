@@ -23,7 +23,7 @@ const LinkProvider = ({ children }) => {
       name: 'youtube'
     }
   ]);
-  const [linkSettingsOpen, updateLinkSettingsOpen] = useState(true);
+  const [linkSettingsOpen, updateLinkSettingsOpen] = useState(false);
 
   const toggleLinkSettings = toggle => updateLinkSettingsOpen(toggle);
 
@@ -37,12 +37,21 @@ const LinkProvider = ({ children }) => {
     updateLinks(result);
   };
 
-  const addLink = newLink => {
-    updateLinks([...links, newLink]);
-    const linksToStore = JSON.stringify(links);
+  const updateLinksInStorage = newLinks => {
+    const linksToStore = JSON.stringify(newLinks);
     localStorage.setItem('links', linksToStore);
   };
 
+  const addLink = newLink => {
+    const newLinks = [...links, newLink];
+    updateLinksInStorage(newLinks);
+    retrieveLinks();
+  };
+
+  /*
+    Takes the link to delete then filters it out of the current links state.
+    Once done updates links in local storage and calls retrieveLinks.
+  */
   const deleteLink = linkToDelete => {
     const checkLink = link => {
       return link.name !== linkToDelete;

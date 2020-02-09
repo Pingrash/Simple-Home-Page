@@ -1,9 +1,34 @@
 import React from 'react';
-import './LinkSettings.css';
 import PropTypes from 'prop-types';
+
+import Paper from '@material-ui/core/Paper';
+import Button from '@material-ui/core/Button';
+import { makeStyles } from '@material-ui/styles';
 
 import AddLinkForm from '../AddLinkForm/AddLinkForm';
 import LinkSettingCard from '../LinkSettingCard/LinkSettingCard';
+
+const useStyles = makeStyles(theme => ({
+  settingsContainer: {
+    width: '70%',
+    minWidth: 'fit-content',
+    display: 'flex',
+    flexDirection: 'column',
+    flex: 1,
+    padding: '2rem 3rem',
+    alignSelf: 'center',
+    margin: '1rem 0'
+  },
+  cardsContainer: {
+    flex: 1,
+    padding: '0 3rem',
+    alignSelf: 'center'
+  },
+  closeButton: {
+    alignSelf: 'flex-end',
+    flex: 1
+  }
+}));
 
 const LinkSettings = ({
   links,
@@ -11,6 +36,8 @@ const LinkSettings = ({
   addLink,
   deleteLink
 }) => {
+  const classes = useStyles();
+
   const linkCardsToRender = links.map(link => {
     return (
       <LinkSettingCard
@@ -23,17 +50,20 @@ const LinkSettings = ({
   });
 
   return (
-    <div className='settings-container'>
-      <button
+    <Paper elevation={4} className={classes.settingsContainer}>
+      <Button
+        variant='contained'
         onClick={() => toggleLinkSettings(false)}
-        className='close-button'
+        className={classes.closeButton}
         data-test='close-button'
       >
         Close
-      </button>
+      </Button>
       <AddLinkForm addLink={addLink} data-test='entry-form' />
-      <div className='cards-container'>{linkCardsToRender}</div>
-    </div>
+      <div className={classes.cardsContainer}>
+        {linkCardsToRender}
+      </div>
+    </Paper>
   );
 };
 
