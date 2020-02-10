@@ -2,11 +2,11 @@
 
 exports[`Greeting snapshot checks Renders correctly with username 1`] = `
 <div
-  className="greeting-container"
+  className="makeStyles-greetingContainer-1"
   data-test="container"
 >
-  <h3
-    className="greeting-body"
+  <h2
+    className="MuiTypography-root makeStyles-greetingBody-2 MuiTypography-h2"
     data-test="greeting"
   >
     Good 
@@ -18,22 +18,22 @@ exports[`Greeting snapshot checks Renders correctly with username 1`] = `
       user
       !
     </span>
-  </h3>
+  </h2>
 </div>
 `;
 
 exports[`Greeting snapshot checks Renders correctly without username 1`] = `
 <div
-  className="greeting-container"
+  className="makeStyles-greetingContainer-1"
   data-test="container"
 >
-  <h3
-    className="greeting-body"
+  <h2
+    className="MuiTypography-root makeStyles-greetingBody-2 MuiTypography-h2"
     data-test="greeting"
   >
     Good 
     morning
     !
-  </h3>
+  </h2>
 </div>
 `;

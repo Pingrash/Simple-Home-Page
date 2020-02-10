@@ -10,7 +10,8 @@ const LinkHandler = () => {
     linkSettingsOpen,
     toggleLinkSettings,
     addLink,
-    deleteLink
+    deleteLink,
+    shiftLinkCard
   } = useContext(LinkContext);
 
   return linkSettingsOpen ? (
@@ -19,6 +20,7 @@ const LinkHandler = () => {
       addLink={addLink}
       links={links}
       deleteLink={deleteLink}
+      shiftLinkCard={shiftLinkCard}
     />
   ) : (
     <LinkGroup

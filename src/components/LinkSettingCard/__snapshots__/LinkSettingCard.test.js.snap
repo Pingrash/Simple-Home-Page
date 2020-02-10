@@ -2,33 +2,129 @@
 
 exports[`Snapshot Should match snapshot 1`] = `
 <div
-  className="card-container"
-  data-test="container"
+  className="makeStyles-mainContainer-6"
 >
-  <img
-    alt="favicon"
-    className="card-favicon"
-    data-test="favicon"
-    src="favicon1"
-  />
-  <h4
-    className="card-title"
-    data-test="title"
+  <div
+    className="makeStyles-arrowContainer-7"
   >
-    name1
-  </h4>
-  <span
-    className="card-url"
-    data-test="url"
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-arrow-8"
+      data-test="shift-button"
+      disabled={false}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        <svg
+          aria-hidden="true"
+          className="MuiSvgIcon-root"
+          focusable="false"
+          role="presentation"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+          />
+        </svg>
+      </span>
+    </button>
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-arrow-8"
+      data-test="shift-button"
+      disabled={false}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        <svg
+          aria-hidden="true"
+          className="MuiSvgIcon-root"
+          focusable="false"
+          role="presentation"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+          />
+        </svg>
+      </span>
+    </button>
+  </div>
+  <div
+    className="MuiPaper-root makeStyles-cardContainer-1 MuiPaper-elevation1 MuiPaper-rounded"
+    data-test="container"
   >
-    link1
-  </span>
-  <button
-    className="card-button"
-    data-test="delete-button"
-    onClick={[Function]}
-  >
-    Delete
-  </button>
+    <img
+      alt="favicon"
+      className="makeStyles-cardFavicon-3"
+      data-test="favicon"
+      src="favicon1"
+    />
+    <span
+      className="MuiTypography-root makeStyles-cardTitle-4 MuiTypography-h6"
+      data-test="title"
+    >
+      name1
+    </span>
+    <span
+      className="MuiTypography-root makeStyles-cardUrl-5 MuiTypography-body2"
+      data-test="url"
+    >
+      link1
+    </span>
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-text card-button MuiButton-textSecondary"
+      data-test="delete-button"
+      disabled={false}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        Delete
+      </span>
+    </button>
+  </div>
 </div>
 `;

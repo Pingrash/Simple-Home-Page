@@ -34,7 +34,8 @@ const LinkSettings = ({
   links,
   toggleLinkSettings,
   addLink,
-  deleteLink
+  deleteLink,
+  shiftLinkCard
 }) => {
   const classes = useStyles();
 
@@ -45,6 +46,7 @@ const LinkSettings = ({
         link={link}
         deleteLink={deleteLink}
         data-test='setting-card'
+        shiftLinkCard={shiftLinkCard}
       />
     );
   });
@@ -76,7 +78,8 @@ LinkSettings.propTypes = {
     })
   ).isRequired,
   toggleLinkSettings: PropTypes.func.isRequired,
-  addLink: PropTypes.func.isRequired
+  addLink: PropTypes.func.isRequired,
+  shiftLinkCard: PropTypes.func.isRequired
 };
 
 export default LinkSettings;

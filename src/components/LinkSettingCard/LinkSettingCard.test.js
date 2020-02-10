@@ -12,7 +12,8 @@ const props = {
     favicon: 'favicon1',
     name: 'name1'
   },
-  deleteLink: testFunc
+  deleteLink: testFunc,
+  shiftLinkCard: testFunc
 };
 
 const setup = () => {
@@ -41,6 +42,11 @@ describe('LinkSettingCard renders correctly', () => {
   it('Should render a delete button', () => {
     const button = findByDataTest(wrapper, 'delete-button');
     expect(button.length).toBe(1);
+  });
+
+  it('Should render shift buttons', () => {
+    const button = findByDataTest(wrapper, 'shift-button');
+    expect(button.length).toBe(2);
   });
 });
 

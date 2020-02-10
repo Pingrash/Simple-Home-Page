@@ -2,45 +2,112 @@
 
 exports[` 1`] = `
 <form
-  className="add-form"
+  className="makeStyles-addForm-3"
   data-test="entry-form"
   onSubmit={[Function]}
 >
-  <h3>
+  <h4
+    className="MuiTypography-root MuiTypography-h4"
+  >
     Add Link
-  </h3>
-  <label
-    for="url"
+  </h4>
+  <div
+    className="MuiFormControl-root"
   >
-    URL: 
-  </label>
-  <input
-    data-test="form-field"
-    defaultValue="https://"
-    id="url"
-    onChange={[Function]}
-    placeholder="https://"
-    required={true}
-    title="Website URL eg. https://www.google.com"
-    type="url"
-  />
-  <label
-    for="name"
+    <label
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated Mui-required Mui-required"
+      data-shrink={false}
+      htmlFor="url"
+    >
+      Website URL:
+      <span
+        className="MuiFormLabel-asterisk MuiInputLabel-asterisk"
+      >
+         
+        *
+      </span>
+    </label>
+    <div
+      className="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl"
+      data-test="form-field"
+      onClick={[Function]}
+    >
+      <input
+        aria-invalid={false}
+        autoComplete="true"
+        autoFocus={true}
+        className="MuiInputBase-input MuiInput-input"
+        disabled={false}
+        id="url"
+        onAnimationStart={[Function]}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="https://www.google.com"
+        required={false}
+        type="url"
+      />
+    </div>
+  </div>
+  <div
+    className="MuiFormControl-root"
   >
-    Link Name: 
-  </label>
-  <input
-    data-test="form-field"
-    id="name"
-    onChange={[Function]}
-    required={true}
-  />
-  <button
-    className="submit-button"
-    data-test="submit-button"
-    type="submit"
-  >
-    Submit
-  </button>
+    <label
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated Mui-required Mui-required"
+      data-shrink={false}
+      htmlFor="name"
+    >
+      Link Name:
+      <span
+        className="MuiFormLabel-asterisk MuiInputLabel-asterisk"
+      >
+         
+        *
+      </span>
+    </label>
+    <div
+      className="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl"
+      data-test="form-field"
+      onClick={[Function]}
+    >
+      <input
+        aria-invalid={false}
+        autoComplete="true"
+        className="MuiInputBase-input MuiInput-input"
+        disabled={false}
+        id="name"
+        onAnimationStart={[Function]}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        required={false}
+        type="text"
+      />
+    </div>
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-submitButton-1 MuiButton-containedPrimary MuiButton-fullWidth"
+      data-test="submit-button"
+      disabled={false}
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="submit"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        Submit
+      </span>
+    </button>
+  </div>
 </form>
 `;

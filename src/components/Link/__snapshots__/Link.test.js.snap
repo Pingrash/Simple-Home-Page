@@ -1,23 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[` 1`] = `
-<a
-  className="link-button"
-  data-test="link-button"
-  href="link"
-  rel="noopener noreferrer"
-  target="_blank"
+<div
+  className="MuiPaper-root makeStyles-linkButton-2 MuiPaper-elevation1 MuiPaper-rounded"
 >
-  <span
-    className="link-title"
+  <a
+    className="makeStyles-link-1"
+    data-test="link-button"
+    href="link"
+    rel="noopener noreferrer"
+    target="_blank"
   >
-    name
-  </span>
-  <img
-    alt="favicon"
-    className="link-favicon"
-    data-test="favicon"
-    src="favicon"
-  />
-</a>
+    <span
+      className="MuiTypography-root makeStyles-linkTitle-3 MuiTypography-h5"
+    >
+      name
+    </span>
+    <img
+      alt="favicon"
+      className="makeStyles-linkFavicon-4"
+      data-test="favicon"
+      src="favicon"
+    />
+  </a>
+</div>
 `;

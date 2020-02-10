@@ -10,7 +10,8 @@ const props = {
   toggleLinkSettings: testFunc,
   addLink: testFunc,
   links: [{ link: 'link', favicon: 'favicon', name: 'name' }],
-  deleteLink: testFunc
+  deleteLink: testFunc,
+  shiftLinkCard: testFunc
 };
 
 const setup = () => {

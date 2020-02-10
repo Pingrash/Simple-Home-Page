@@ -6,6 +6,8 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import { makeStyles } from '@material-ui/styles';
 
+import { ArrowUpward, ArrowDownward } from '@material-ui/icons';
+
 const useStyles = makeStyles(theme => ({
   cardContainer: {
     height: 60,
@@ -31,47 +33,78 @@ const useStyles = makeStyles(theme => ({
   cardUrl: {
     flex: 3,
     textAlign: 'center'
+  },
+  mainContainer: {
+    display: 'flex'
+  },
+  arrowContainer: {
+    display: 'flex',
+    flexDirection: 'column',
+    height: 60,
+    margin: 'auto 1rem auto 0'
+  },
+  arrow: {
+    flex: 1,
+    height: 30
   }
 }));
 
-const LinkSettingCard = ({ link, deleteLink }) => {
+const LinkSettingCard = ({ link, deleteLink, shiftLinkCard }) => {
   const classes = useStyles();
 
   return (
-    <Paper className={classes.cardContainer} data-test='container'>
-      {link.favicon ? (
-        <img
-          src={link.favicon}
-          alt='favicon'
-          data-test='favicon'
-          className={classes.cardFavicon}
-        />
-      ) : null}
-      <Typography
-        component='span'
-        variant='h6'
-        className={classes.cardTitle}
-        data-test='title'
-      >
-        {link.name}
-      </Typography>
-      <Typography
-        component='span'
-        variant='body2'
-        className={classes.cardUrl}
-        data-test='url'
-      >
-        {link.link}
-      </Typography>
-      <Button
-        className='card-button'
-        color='secondary'
-        data-test='delete-button'
-        onClick={() => deleteLink(link.name)}
-      >
-        Delete
-      </Button>
-    </Paper>
+    <div className={classes.mainContainer}>
+      <div className={classes.arrowContainer}>
+        <Button
+          onClick={() => shiftLinkCard('up', link.name)}
+          className={classes.arrow}
+          data-test='shift-button'
+        >
+          <ArrowUpward />
+        </Button>
+        <Button
+          onClick={() => shiftLinkCard('down', link.name)}
+          className={classes.arrow}
+          data-test='shift-button'
+        >
+          <ArrowDownward />
+        </Button>
+      </div>
+      <Paper className={classes.cardContainer} data-test='container'>
+        {link.favicon ? (
+          <img
+            src={link.favicon}
+            alt='favicon'
+            data-test='favicon'
+            className={classes.cardFavicon}
+          />
+        ) : null}
+        <Typography
+          component='span'
+          variant='h6'
+          className={classes.cardTitle}
+          data-test='title'
+        >
+          {link.name}
+        </Typography>
+        <Typography
+          component='span'
+          variant='body2'
+          className={classes.cardUrl}
+          data-test='url'
+        >
+          {link.link}
+        </Typography>
+        <Button
+          className='card-button'
+          color='secondary'
+          data-test='delete-button'
+          onClick={() => deleteLink(link.name)}
+        >
+          Delete
+        </Button>
+      </Paper>
+    </div>
   );
 };
 

@@ -17,7 +17,7 @@ const useStyles = makeStyles(theme => ({
   },
   linkButton: {
     '&:hover': {
-      backgroundColor: '#f1f1f1'
+      backgroundColor: '#f5f5f5'
     },
     display: 'flex',
     flexDirection: 'row',
@@ -26,7 +26,7 @@ const useStyles = makeStyles(theme => ({
     alignItems: 'center',
     justifyContent: 'center',
     margin: '1rem',
-    borderRadius: '50%'
+    borderRadius: '10%'
   },
   linkTitle: {
     flex: 1,

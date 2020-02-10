@@ -61,6 +61,33 @@ const LinkProvider = ({ children }) => {
     retrieveLinks();
   };
 
+  const shiftLinkCard = (direction, linkToShift) => {
+    const checkLinkIndex = link => {
+      return link.name === linkToShift;
+    };
+    const currentIndex = links.findIndex(checkLinkIndex);
+    console.log(currentIndex);
+
+    const newIndex =
+      direction === 'up' ? currentIndex - 1 : currentIndex + 1;
+    console.log(newIndex);
+
+    if (newIndex < 0 || newIndex > links.length) return;
+
+    const link1 = links[currentIndex];
+    const link2 = links[newIndex];
+
+    let newLinksArray = links;
+    console.log(`new links array: ${newLinksArray}`);
+    if (direction === 'up') {
+      newLinksArray.splice(newIndex, 2, link1, link2);
+    } else if (direction === 'down') {
+      newLinksArray.splice(currentIndex, 2, link2, link1);
+    }
+    updateLinksInStorage(newLinksArray);
+    retrieveLinks();
+  };
+
   useEffect(() => {
     retrieveLinks();
   }, []);
@@ -72,7 +99,8 @@ const LinkProvider = ({ children }) => {
         addLink,
         linkSettingsOpen,
         toggleLinkSettings,
-        deleteLink
+        deleteLink,
+        shiftLinkCard
       }}
     >
       {children}
