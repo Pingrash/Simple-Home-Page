@@ -61,16 +61,16 @@ const LinkProvider = ({ children }) => {
     retrieveLinks();
   };
 
+  // Shifts a links index position by one based on wether it is to be moved up or down in the list.
   const shiftLinkCard = (direction, linkToShift) => {
+    // For findIndex
     const checkLinkIndex = link => {
       return link.name === linkToShift;
     };
     const currentIndex = links.findIndex(checkLinkIndex);
-    console.log(currentIndex);
 
     const newIndex =
       direction === 'up' ? currentIndex - 1 : currentIndex + 1;
-    console.log(newIndex);
 
     if (newIndex < 0 || newIndex > links.length) return;
 
@@ -78,7 +78,6 @@ const LinkProvider = ({ children }) => {
     const link2 = links[newIndex];
 
     let newLinksArray = links;
-    console.log(`new links array: ${newLinksArray}`);
     if (direction === 'up') {
       newLinksArray.splice(newIndex, 2, link1, link2);
     } else if (direction === 'down') {

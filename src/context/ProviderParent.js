@@ -2,11 +2,14 @@ import React from 'react';
 
 import { TimeProvider } from './timeContext';
 import { LinkProvider } from './linkContext';
+import { UserProvider } from './userContext';
 
 const ProviderParent = ({ children }) => {
   return (
     <TimeProvider>
-      <LinkProvider>{children}</LinkProvider>
+      <UserProvider>
+        <LinkProvider>{children}</LinkProvider>
+      </UserProvider>
     </TimeProvider>
   );
 };
