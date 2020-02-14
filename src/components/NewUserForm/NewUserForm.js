@@ -45,7 +45,7 @@ const NewUserForm = ({ updateUser }) => {
   const [username, setUsername] = useState('');
 
   return (
-    <Paper className={classes.formContainer}>
+    <Paper className={classes.formContainer} data-test='greeting'>
       <Typography
         component='h2'
         variant='h2'
@@ -73,6 +73,7 @@ const NewUserForm = ({ updateUser }) => {
           e.preventDefault();
           updateUser(username);
         }}
+        data-test='user-form'
       >
         <FormControl className={classes.form}>
           <InputLabel
