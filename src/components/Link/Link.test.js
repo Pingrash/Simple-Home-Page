@@ -40,12 +40,7 @@ describe('Link component renders correctly', () => {
 
 describe('Link component has correct props', () => {
   it('Should not have any prop errors', () => {
-    const expectedProps = {
-      link: 'link1',
-      favicon: 'favicon1',
-      name: 'name1'
-    };
-    const propsError = checkProps(Link, expectedProps);
+    const propsError = checkProps(Link, props);
     expect(propsError).toBeUndefined();
   });
 });

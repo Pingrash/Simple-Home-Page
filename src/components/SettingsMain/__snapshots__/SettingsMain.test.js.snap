@@ -1,9 +1,36 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Snapshot Should match snapshot 1`] = `
-Array [
+exports[`Snapshot Matches snapshot 1`] = `
+<div
+  className="MuiPaper-root makeStyles-settingsContainer-1 MuiPaper-elevation4 MuiPaper-rounded"
+>
+  <button
+    className="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-button-31"
+    data-test="button"
+    disabled={false}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      Settings
+    </span>
+  </button>
   <form
-    className="makeStyles-addForm-4"
+    className="makeStyles-addForm-67"
     data-test="entry-form"
     onSubmit={[Function]}
   >
@@ -86,7 +113,7 @@ Array [
         />
       </div>
       <button
-        className="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-submitButton-2 MuiButton-containedPrimary MuiButton-fullWidth"
+        className="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-submitButton-65 MuiButton-containedPrimary MuiButton-fullWidth"
         data-test="submit-button"
         disabled={false}
         onBlur={[Function]}
@@ -110,18 +137,18 @@ Array [
         </span>
       </button>
     </div>
-  </form>,
+  </form>
   <div
-    className="makeStyles-cardsContainer-1"
+    className="makeStyles-cardsContainer-64"
   >
     <div
-      className="makeStyles-mainContainer-128"
+      className="makeStyles-mainContainer-159"
     >
       <div
-        className="makeStyles-arrowContainer-129"
+        className="makeStyles-arrowContainer-160"
       >
         <button
-          className="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-arrow-130"
+          className="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-arrow-161"
           data-test="shift-button"
           disabled={false}
           onBlur={[Function]}
@@ -156,7 +183,7 @@ Array [
           </span>
         </button>
         <button
-          className="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-arrow-130"
+          className="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-arrow-161"
           data-test="shift-button"
           disabled={false}
           onBlur={[Function]}
@@ -192,23 +219,23 @@ Array [
         </button>
       </div>
       <div
-        className="MuiPaper-root makeStyles-cardContainer-123 MuiPaper-elevation1 MuiPaper-rounded"
+        className="MuiPaper-root makeStyles-cardContainer-154 MuiPaper-elevation1 MuiPaper-rounded"
         data-test="container"
       >
         <img
           alt="favicon"
-          className="makeStyles-cardFavicon-125"
+          className="makeStyles-cardFavicon-156"
           data-test="favicon"
           src="favicon"
         />
         <span
-          className="MuiTypography-root makeStyles-cardTitle-126 MuiTypography-h6"
+          className="MuiTypography-root makeStyles-cardTitle-157 MuiTypography-h6"
           data-test="title"
         >
           name
         </span>
         <span
-          className="MuiTypography-root makeStyles-cardUrl-127 MuiTypography-body2"
+          className="MuiTypography-root makeStyles-cardUrl-158 MuiTypography-body2"
           data-test="url"
         >
           link
@@ -240,6 +267,119 @@ Array [
         </button>
       </div>
     </div>
-  </div>,
-]
+  </div>
+  <hr
+    className="MuiDivider-root makeStyles-divider-2 MuiDivider-middle"
+  />
+  <form
+    className="makeStyles-form-177"
+    data-test="form"
+    onSubmit={[Function]}
+  >
+    <h4
+      className="MuiTypography-root MuiTypography-h4"
+    >
+      Update User
+    </h4>
+    <div
+      className="MuiFormControl-root"
+    >
+      <label
+        className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated Mui-required Mui-required"
+        data-shrink={false}
+        htmlFor="username-input"
+      >
+        New Username:
+         
+        <span
+          className="MuiFormLabel-asterisk MuiInputLabel-asterisk"
+        >
+           
+          *
+        </span>
+      </label>
+      <div
+        className="MuiInputBase-root MuiInput-root MuiInput-underline makeStyles-formSpacing-178 MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl"
+        onClick={[Function]}
+      >
+        <input
+          aria-invalid={false}
+          autoComplete="true"
+          className="MuiInputBase-input MuiInput-input"
+          disabled={false}
+          id="username-input"
+          onAnimationStart={[Function]}
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="username"
+          required={false}
+          type="text"
+        />
+      </div>
+      <button
+        className="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-formSpacing-178 MuiButton-containedPrimary MuiButton-fullWidth"
+        disabled={false}
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="submit"
+      >
+        <span
+          className="MuiButton-label"
+        >
+          Submit
+        </span>
+      </button>
+    </div>
+  </form>
+  <hr
+    className="MuiDivider-root makeStyles-divider-2 MuiDivider-middle"
+  />
+  <h4
+    className="MuiTypography-root MuiTypography-h4"
+  >
+    Reset To Default
+  </h4>
+  <span
+    className="MuiTypography-root makeStyles-spacing-180 MuiTypography-body1 MuiTypography-colorError"
+    data-test="warning"
+  >
+    WARNING: Pressing this button will reset everything to default!
+  </span>
+  <button
+    className="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-spacing-180 MuiButton-outlinedSecondary"
+    data-test="reset-button"
+    disabled={false}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      Delete User
+    </span>
+  </button>
+</div>
 `;

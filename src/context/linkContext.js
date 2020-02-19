@@ -3,7 +3,7 @@ import React, { useState, useEffect, createContext } from 'react';
 const LinkContext = createContext();
 
 const LinkProvider = ({ children }) => {
-  const [links, updateLinks] = useState([
+  const defaultLinks = [
     {
       link: 'https://www.facebook.com',
       favicon:
@@ -22,10 +22,14 @@ const LinkProvider = ({ children }) => {
         'http://www.google.com/s2/favicons?domain=www.youtube.com',
       name: 'youtube'
     }
-  ]);
+  ];
+
+  const [links, updateLinks] = useState(defaultLinks);
   const [linkSettingsOpen, updateLinkSettingsOpen] = useState(false);
 
   const toggleLinkSettings = toggle => updateLinkSettingsOpen(toggle);
+
+  const resetLinks = () => updateLinks(defaultLinks);
 
   const retrieveLinks = () => {
     let result = JSON.parse(localStorage.getItem('links'));
@@ -99,7 +103,8 @@ const LinkProvider = ({ children }) => {
         linkSettingsOpen,
         toggleLinkSettings,
         deleteLink,
-        shiftLinkCard
+        shiftLinkCard,
+        resetLinks
       }}
     >
       {children}

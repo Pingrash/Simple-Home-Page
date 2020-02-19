@@ -21,3 +21,5 @@ export const checkProps = (component, expectedProps) => {
   );
   return propsError;
 };
+
+export const testFunc = () => null;

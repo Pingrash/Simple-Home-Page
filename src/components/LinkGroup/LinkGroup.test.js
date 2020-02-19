@@ -1,15 +1,17 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import renderer from 'react-test-renderer';
-import { findByDataTest, checkProps } from '../../../Utilities';
+import {
+  findByDataTest,
+  checkProps,
+  testFunc
+} from '../../../Utilities';
 import LinkGroup from './LinkGroup';
 
 const setup = (props = {}) => {
   const component = shallow(<LinkGroup {...props} />);
   return component;
 };
-
-const testFunc = () => null;
 
 const props = {
   links: [

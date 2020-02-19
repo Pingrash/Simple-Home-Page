@@ -1,105 +1,78 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Snapshot Should render correctly 1`] = `
-Array [
-  <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-toggleButton-2"
-    data-test="toggle-button"
-    disabled={false}
-    onBlur={[Function]}
-    onClick={[Function]}
-    onDragLeave={[Function]}
-    onFocus={[Function]}
-    onKeyDown={[Function]}
-    onKeyUp={[Function]}
-    onMouseDown={[Function]}
-    onMouseLeave={[Function]}
-    onMouseUp={[Function]}
-    onTouchEnd={[Function]}
-    onTouchMove={[Function]}
-    onTouchStart={[Function]}
-    tabIndex={0}
-    type="button"
-  >
-    <span
-      className="MuiButton-label"
-    >
-      Settings
-    </span>
-  </button>,
+<div
+  className="makeStyles-linkContainer-1"
+  data-test="link-group"
+>
   <div
-    className="makeStyles-linkContainer-1"
-    data-test="link-group"
+    className="MuiPaper-root makeStyles-linkButton-3 MuiPaper-elevation1 MuiPaper-rounded"
   >
-    <div
-      className="MuiPaper-root makeStyles-linkButton-36 MuiPaper-elevation1 MuiPaper-rounded"
+    <a
+      className="makeStyles-link-2"
+      data-test="link-button"
+      href="link1"
+      rel="noopener noreferrer"
+      target="_blank"
     >
-      <a
-        className="makeStyles-link-35"
-        data-test="link-button"
-        href="link1"
-        rel="noopener noreferrer"
-        target="_blank"
+      <span
+        className="MuiTypography-root makeStyles-linkTitle-4 MuiTypography-h5"
       >
-        <span
-          className="MuiTypography-root makeStyles-linkTitle-37 MuiTypography-h5"
-        >
-          name1
-        </span>
-        <img
-          alt="favicon"
-          className="makeStyles-linkFavicon-38"
-          data-test="favicon"
-          src="favicon1"
-        />
-      </a>
-    </div>
-    <div
-      className="MuiPaper-root makeStyles-linkButton-36 MuiPaper-elevation1 MuiPaper-rounded"
+        name1
+      </span>
+      <img
+        alt="favicon"
+        className="makeStyles-linkFavicon-5"
+        data-test="favicon"
+        src="favicon1"
+      />
+    </a>
+  </div>
+  <div
+    className="MuiPaper-root makeStyles-linkButton-3 MuiPaper-elevation1 MuiPaper-rounded"
+  >
+    <a
+      className="makeStyles-link-2"
+      data-test="link-button"
+      href="link2"
+      rel="noopener noreferrer"
+      target="_blank"
     >
-      <a
-        className="makeStyles-link-35"
-        data-test="link-button"
-        href="link2"
-        rel="noopener noreferrer"
-        target="_blank"
+      <span
+        className="MuiTypography-root makeStyles-linkTitle-4 MuiTypography-h5"
       >
-        <span
-          className="MuiTypography-root makeStyles-linkTitle-37 MuiTypography-h5"
-        >
-          name2
-        </span>
-        <img
-          alt="favicon"
-          className="makeStyles-linkFavicon-38"
-          data-test="favicon"
-          src="favicon2"
-        />
-      </a>
-    </div>
-    <div
-      className="MuiPaper-root makeStyles-linkButton-36 MuiPaper-elevation1 MuiPaper-rounded"
+        name2
+      </span>
+      <img
+        alt="favicon"
+        className="makeStyles-linkFavicon-5"
+        data-test="favicon"
+        src="favicon2"
+      />
+    </a>
+  </div>
+  <div
+    className="MuiPaper-root makeStyles-linkButton-3 MuiPaper-elevation1 MuiPaper-rounded"
+  >
+    <a
+      className="makeStyles-link-2"
+      data-test="link-button"
+      href="link3"
+      rel="noopener noreferrer"
+      target="_blank"
     >
-      <a
-        className="makeStyles-link-35"
-        data-test="link-button"
-        href="link3"
-        rel="noopener noreferrer"
-        target="_blank"
+      <span
+        className="MuiTypography-root makeStyles-linkTitle-4 MuiTypography-h5"
       >
-        <span
-          className="MuiTypography-root makeStyles-linkTitle-37 MuiTypography-h5"
-        >
-          name3
-        </span>
-        <img
-          alt="favicon"
-          className="makeStyles-linkFavicon-38"
-          data-test="favicon"
-          src="favicon3"
-        />
-      </a>
-    </div>
-  </div>,
-]
+        name3
+      </span>
+      <img
+        alt="favicon"
+        className="makeStyles-linkFavicon-5"
+        data-test="favicon"
+        src="favicon3"
+      />
+    </a>
+  </div>
+</div>
 `;

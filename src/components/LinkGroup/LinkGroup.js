@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Button from '@material-ui/core/Button';
 import { makeStyles } from '@material-ui/styles';
 
 import Link from '../Link/Link';
@@ -14,12 +13,6 @@ const useStyles = makeStyles(theme => ({
     flexWrap: 'wrap',
     flex: 1,
     margin: '2rem 6rem'
-  },
-  toggleButton: {
-    flex: 1,
-    width: 90,
-    alignSelf: 'flex-end',
-    marginRight: '2rem'
   }
 }));
 
@@ -39,19 +32,9 @@ const LinkGroup = ({ links, toggleLinkSettings }) => {
   });
 
   return (
-    <>
-      <Button
-        variant='contained'
-        onClick={() => toggleLinkSettings(true)}
-        className={classes.toggleButton}
-        data-test='toggle-button'
-      >
-        Settings
-      </Button>
-      <div className={classes.linkContainer} data-test='link-group'>
-        {linksToRender}
-      </div>
-    </>
+    <div className={classes.linkContainer} data-test='link-group'>
+      {linksToRender}
+    </div>
   );
 };
 

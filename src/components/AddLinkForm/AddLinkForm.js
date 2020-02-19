@@ -26,9 +26,9 @@ const useStyles = makeStyles(theme => ({
 }));
 
 const AddLinkForm = ({ addLink }) => {
-  const [url, updateUrl] = useState('');
-  const [linkName, updateLinkName] = useState('');
-  const [linkAdded, updateLinkAdded] = useState(false);
+  const [url, setUrl] = useState('');
+  const [linkName, setLinkName] = useState('');
+  const [linkAdded, setLinkAdded] = useState(false);
 
   const classes = useStyles();
 
@@ -44,7 +44,7 @@ const AddLinkForm = ({ addLink }) => {
           };
           console.log(newLink);
           addLink(newLink);
-          updateLinkAdded(true);
+          setLinkAdded(true);
         }}
         className={classes.addForm}
         data-test='entry-form'
@@ -59,7 +59,12 @@ const AddLinkForm = ({ addLink }) => {
           <Input
             id='url'
             type='url'
-            onChange={e => updateUrl(e.target.value)}
+            onChange={e => {
+              setUrl(e.target.value);
+              if (linkAdded) {
+                setLinkAdded(false);
+              }
+            }}
             autoComplete='true'
             autoFocus
             fullWidth
@@ -73,7 +78,7 @@ const AddLinkForm = ({ addLink }) => {
           </InputLabel>
           <Input
             id='name'
-            onChange={e => updateLinkName(e.target.value)}
+            onChange={e => setLinkName(e.target.value)}
             autoComplete='true'
             fullWidth
             data-test='form-field'

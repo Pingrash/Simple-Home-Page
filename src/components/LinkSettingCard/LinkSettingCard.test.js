@@ -1,10 +1,12 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import renderer from 'react-test-renderer';
-import { findByDataTest, checkProps } from '../../../Utilities';
+import {
+  findByDataTest,
+  checkProps,
+  testFunc
+} from '../../../Utilities';
 import LinkSettingCard from './LinkSettingCard';
-
-const testFunc = () => null;
 
 const props = {
   link: {

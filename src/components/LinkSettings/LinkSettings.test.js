@@ -1,13 +1,14 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import renderer from 'react-test-renderer';
-import { findByDataTest, checkProps } from '../../../Utilities';
+import {
+  findByDataTest,
+  checkProps,
+  testFunc
+} from '../../../Utilities';
 import LinkSettings from './LinkSettings';
 
-const testFunc = () => null;
-
 const props = {
-  toggleLinkSettings: testFunc,
   addLink: testFunc,
   links: [{ link: 'link', favicon: 'favicon', name: 'name' }],
   deleteLink: testFunc,
@@ -46,11 +47,6 @@ describe('LinkSettings component renders correctly', () => {
   it('Should render link setting cards', () => {
     const cards = findByDataTest(wrapper, 'setting-card');
     expect(cards.length).toBe(1);
-  });
-
-  it('Should render a close button', () => {
-    const button = findByDataTest(wrapper, 'close-button');
-    expect(button.length).toBe(1);
   });
 });
 

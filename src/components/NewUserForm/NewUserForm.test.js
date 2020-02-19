@@ -1,10 +1,12 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { findByDataTest, checkProps } from '../../../Utilities';
+import {
+  findByDataTest,
+  checkProps,
+  testFunc
+} from '../../../Utilities';
 import renderer from 'react-test-renderer';
 import NewUserForm from './NewUserForm';
-
-const testFunc = () => null;
 
 const props = {
   updateUser: testFunc

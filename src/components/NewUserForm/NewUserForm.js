@@ -56,7 +56,7 @@ const NewUserForm = ({ updateUser }) => {
       <Typography
         component='p'
         variant='h4'
-        className={[classes.body1, classes.body2]}
+        className={`${classes.body1} ${classes.body2}`}
       >
         Some default links will be set up for you. You can edit them
         in the settings.

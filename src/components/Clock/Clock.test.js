@@ -42,11 +42,7 @@ describe('Clock component renders correctly', () => {
 
 describe('Clock component has correct props', () => {
   it('Should not have any prop errors', () => {
-    const expectedProps = {
-      time: 'testTime',
-      date: 'testDate'
-    };
-    const propsError = checkProps(Clock, expectedProps);
+    const propsError = checkProps(Clock, props);
     expect(propsError).toBeUndefined();
   });
 });
