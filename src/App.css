@@ -6,7 +6,7 @@
   flex-direction: column;
   flex: 1;
   overflow-x: hidden;
-  background-image: linear-gradient(to bottom right, #f1f1f1, grey);
+  background-image: radial-gradient(darkGray, gray);
 }
 
 .success {
