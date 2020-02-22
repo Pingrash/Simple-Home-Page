@@ -39,6 +39,7 @@ const UserSettings = ({ user, updateUser }) => {
           e.preventDefault();
           updateUser(username);
           setSubmitted(true);
+          setUsername('');
         }}
       >
         <Typography component='h4' variant='h4'>
@@ -62,6 +63,7 @@ const UserSettings = ({ user, updateUser }) => {
                 setUserDeleted(false);
               }
             }}
+            value={username}
             autoComplete='true'
             fullWidth
             className={classes.formSpacing}

@@ -32,6 +32,11 @@ const AddLinkForm = ({ addLink }) => {
 
   const classes = useStyles();
 
+  const clearFields = () => {
+    setUrl('');
+    setLinkName('');
+  };
+
   return (
     <>
       <form
@@ -42,9 +47,9 @@ const AddLinkForm = ({ addLink }) => {
             favicon: `http://www.google.com/s2/favicons?domain=${url}`,
             name: linkName
           };
-          console.log(newLink);
           addLink(newLink);
           setLinkAdded(true);
+          clearFields();
         }}
         className={classes.addForm}
         data-test='entry-form'
@@ -65,6 +70,7 @@ const AddLinkForm = ({ addLink }) => {
                 setLinkAdded(false);
               }
             }}
+            value={url}
             autoComplete='true'
             autoFocus
             fullWidth
@@ -79,6 +85,7 @@ const AddLinkForm = ({ addLink }) => {
           <Input
             id='name'
             onChange={e => setLinkName(e.target.value)}
+            value={linkName}
             autoComplete='true'
             fullWidth
             data-test='form-field'
