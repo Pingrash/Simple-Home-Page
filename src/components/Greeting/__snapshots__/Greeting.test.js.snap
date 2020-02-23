@@ -33,7 +33,12 @@ exports[`Greeting snapshot checks Renders correctly without username 1`] = `
   >
     Good 
     morning
-    !
+    <span
+      data-test="username"
+    >
+       
+      !
+    </span>
   </h2>
 </div>
 `;

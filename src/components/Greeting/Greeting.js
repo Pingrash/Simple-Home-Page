@@ -13,7 +13,8 @@ const useStyles = makeStyles(theme => ({
     width: '100%',
     margin: '0 auto',
     textTransform: 'capitalize',
-    textAlign: 'center'
+    textAlign: 'center',
+    fontWeight: '500'
   }
 }));
 
@@ -29,11 +30,7 @@ const Greeting = ({ username, timeGreeting }) => {
         data-test='greeting'
       >
         Good {timeGreeting}
-        {username ? (
-          <span data-test='username'> {username}!</span>
-        ) : (
-          '!'
-        )}
+        <span data-test='username'> {username}!</span>
       </Typography>
     </div>
   );

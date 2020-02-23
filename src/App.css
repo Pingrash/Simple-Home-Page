@@ -6,7 +6,7 @@
   flex-direction: column;
   flex: 1;
   overflow-x: hidden;
-  background-image: radial-gradient(darkGray, gray);
+  background-color: #00bcd4;
 }
 
 .success {

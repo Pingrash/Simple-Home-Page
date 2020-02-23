@@ -38,12 +38,6 @@ describe('Greeting component renders correctly', () => {
     const user = findByDataTest(wrapper, 'username');
     expect(user.length).toBe(1);
   });
-
-  it('Renders correct generic greeting (no username)', () => {
-    const wrapper = setup();
-    const user = findByDataTest(wrapper, 'username');
-    expect(user.length).toBe(0);
-  });
 });
 
 describe('Greeting component has correct props', () => {
