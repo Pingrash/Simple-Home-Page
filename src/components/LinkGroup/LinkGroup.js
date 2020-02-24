@@ -7,16 +7,17 @@ import Link from '../Link/Link';
 
 const useStyles = makeStyles(theme => ({
   linkContainer: {
-    width: '90%',
+    width: '90vw',
+    minHeight: 'fit-content',
     display: 'flex',
     flexDirection: 'row',
     flexWrap: 'wrap',
-    flex: 1,
-    margin: '2rem 6rem'
+    margin: '4rem 2rem',
+    padding: '0 5%'
   }
 }));
 
-const LinkGroup = ({ links, toggleLinkSettings }) => {
+const LinkGroup = ({ links }) => {
   const classes = useStyles();
 
   const linksToRender = links.map(link => {

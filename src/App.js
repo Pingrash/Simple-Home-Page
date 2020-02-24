@@ -10,7 +10,7 @@ import LinkHandler from './handlers/LinksHandler/LinkHandler';
 
 const App = () => {
   return (
-    <Container className='App'>
+    <Container className='App' maxWidth={false}>
       <CssBaseLine />
       <TimeHandler />
       <SettingsHandler />
