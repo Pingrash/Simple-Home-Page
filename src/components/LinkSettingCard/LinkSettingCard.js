@@ -16,7 +16,8 @@ const useStyles = makeStyles(theme => ({
     flexDirection: 'row',
     alignItems: 'center',
     padding: '1rem',
-    margin: '0.5rem 0'
+    margin: '0.5rem 0',
+    backgroundColor: 'rgba(255, 255, 255, 0.08)'
   },
   cardButton: {
     flex: 1

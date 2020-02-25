@@ -8,9 +8,7 @@ const useStyles = makeStyles(theme => ({
   button: {
     alignSelf: 'flex-end',
     marginTop: '1rem',
-    width: 90,
-    backgroundColor: '#B3E5FC',
-    color: 'black'
+    width: 90
   }
 }));
 
