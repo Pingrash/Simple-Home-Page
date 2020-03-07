@@ -3,9 +3,7 @@ import React, { useState, createContext, useEffect } from 'react';
 const ReminderContext = createContext();
 
 const ReminderProvider = ({ children }) => {
-  const [reminders, setReminders] = useState([
-    { title: 'title', body: 'this is the body' }
-  ]);
+  const [reminders, setReminders] = useState([]);
 
   const updateLocalStorage = newReminders => {
     const remindersToStore = JSON.stringify(newReminders);
