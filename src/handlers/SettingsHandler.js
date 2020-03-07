@@ -4,14 +4,14 @@ import Paper from '@material-ui/core/Paper';
 import Divider from '@material-ui/core/Divider';
 import { makeStyles } from '@material-ui/styles';
 
-import { LinkContext } from '../../context/linkContext';
-import { UserContext } from '../../context/userContext';
-import { SettingsContext } from '../../context/settingsContext';
+import { LinkContext } from '../context/linkContext';
+import { UserContext } from '../context/userContext';
+import { SettingsContext } from '../context/settingsContext';
 
-import LinkSettings from '../../components/LinkSettings/LinkSettings';
-import UserSettings from '../../components/UserSettings/UserSettings';
-import SettingsButton from '../../components/SettingsButton/SettingsButton';
-import ResetSettings from '../../components/ResetSettings/ResetSettings';
+import LinkSettings from '../components/LinkSettings/LinkSettings';
+import UserSettings from '../components/UserSettings/UserSettings';
+import SettingsButton from '../components/SettingsButton/SettingsButton';
+import ResetSettings from '../components/ResetSettings/ResetSettings';
 
 const useStyles = makeStyles(theme => ({
   settingsContainer: {

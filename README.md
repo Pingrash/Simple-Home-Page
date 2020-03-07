@@ -30,3 +30,15 @@ Because of this I am utilising LocalStorage to store link data and will likely u
 ## Testing
 
 For testing Jest and Enzyme are being used. I am trying to use a TDD approach to developing this project and as such am creating tests for each component before starting on the code for them.
+
+## Components Overview
+
+### Greeting Header
+
+The greeting header takes the stored username and gives a time based greeting to the user.
+Beneath the greeting is the current local date and time.
+
+### Link Buttons
+
+The user can set a series of links buttons to give them quick access to their favorite sites.
+The links can be added/removed/rearranged through the settings button located at the top left of the link group.

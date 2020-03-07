@@ -47,6 +47,7 @@ Array [
           placeholder="https://www.google.com"
           required={false}
           type="url"
+          value=""
         />
       </div>
     </div>
@@ -83,6 +84,7 @@ Array [
           onFocus={[Function]}
           required={false}
           type="text"
+          value=""
         />
       </div>
       <button

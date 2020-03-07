@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot Should match snapshot 1`] = `
+<div
+  className="MuiPaper-root makeStyles-container-1 MuiPaper-elevation1 MuiPaper-rounded"
+>
+  <h6
+    className="MuiTypography-root makeStyles-title-2 MuiTypography-h6"
+    data-test="title"
+  >
+    title
+  </h6>
+  <p
+    className="MuiTypography-root makeStyles-body-3 MuiTypography-body1"
+    data-test="body"
+  >
+    body
+  </p>
+  <button
+    className="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-button-4 MuiButton-textSecondary"
+    data-test="button"
+    disabled={false}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      Delete
+    </span>
+  </button>
+</div>
+`;

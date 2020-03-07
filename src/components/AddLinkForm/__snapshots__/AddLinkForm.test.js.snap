@@ -46,6 +46,7 @@ exports[` 1`] = `
         placeholder="https://www.google.com"
         required={false}
         type="url"
+        value=""
       />
     </div>
   </div>
@@ -82,6 +83,7 @@ exports[` 1`] = `
         onFocus={[Function]}
         required={false}
         type="text"
+        value=""
       />
     </div>
     <button

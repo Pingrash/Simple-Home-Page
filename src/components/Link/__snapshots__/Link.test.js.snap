@@ -1,27 +1,40 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[` 1`] = `
-<div
-  className="MuiPaper-root makeStyles-linkButton-2 MuiPaper-elevation1 MuiPaper-rounded"
+<a
+  aria-disabled={false}
+  className="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-linkButton-1"
+  data-test="link-button"
+  href="link"
+  onBlur={[Function]}
+  onDragLeave={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  rel="noopener noreferrer"
+  tabIndex={0}
+  target="_blank"
 >
-  <a
-    className="makeStyles-link-1"
-    data-test="link-button"
-    href="link"
-    rel="noopener noreferrer"
-    target="_blank"
+  <span
+    className="MuiButton-label"
   >
     <span
-      className="MuiTypography-root makeStyles-linkTitle-3 MuiTypography-h5"
+      className="MuiTypography-root makeStyles-linkTitle-2 MuiTypography-h5"
     >
       name
     </span>
     <img
       alt="favicon"
-      className="makeStyles-linkFavicon-4"
+      className="makeStyles-linkFavicon-3"
       data-test="favicon"
       src="favicon"
     />
-  </a>
-</div>
+  </span>
+</a>
 `;

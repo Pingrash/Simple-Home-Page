@@ -1,11 +1,11 @@
 import React, { useContext } from 'react';
 
-import Greeting from '../../components/Greeting/Greeting';
-import Clock from '../../components/Clock/Clock';
-import NewUserForm from '../../components/NewUserForm/NewUserForm';
+import Greeting from '../components/Greeting/Greeting';
+import Clock from '../components/Clock/Clock';
+import NewUserForm from '../components/NewUserForm/NewUserForm';
 
-import { TimeContext } from '../../context/timeContext';
-import { UserContext } from '../../context/userContext';
+import { TimeContext } from '../context/timeContext';
+import { UserContext } from '../context/userContext';
 
 const TimeComponentsHandler = () => {
   const { timeGreeting, time, date } = useContext(TimeContext);

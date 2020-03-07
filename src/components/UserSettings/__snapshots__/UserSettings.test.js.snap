@@ -45,6 +45,7 @@ exports[`Snapshot Should match snapshot 1`] = `
         placeholder="username"
         required={false}
         type="text"
+        value=""
       />
     </div>
     <button

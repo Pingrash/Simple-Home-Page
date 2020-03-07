@@ -4,14 +4,14 @@ import './App.css';
 import Container from '@material-ui/core/Container';
 import CssBaseLine from '@material-ui/core/CssBaseline';
 import {
-  MuiThemeProvider,
   createMuiTheme,
   ThemeProvider
 } from '@material-ui/core/styles';
 
-import SettingsHandler from './handlers/SettingsHandler/SettingsHandler';
-import TimeHandler from './handlers/TimeHandler/TimeHandler';
-import LinkHandler from './handlers/LinksHandler/LinkHandler';
+import SettingsHandler from './handlers/SettingsHandler';
+import TimeHandler from './handlers/TimeHandler';
+import LinkHandler from './handlers/LinkHandler';
+import ReminderHandler from './handlers/ReminderHandler';
 
 const darkTheme = createMuiTheme({
   palette: {
@@ -27,6 +27,7 @@ const App = () => {
         <TimeHandler />
         <SettingsHandler />
         <LinkHandler />
+        <ReminderHandler />
       </Container>
     </ThemeProvider>
   );

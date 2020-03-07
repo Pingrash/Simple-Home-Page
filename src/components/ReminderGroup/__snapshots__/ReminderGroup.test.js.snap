@@ -1,0 +1,135 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot Should match snapshot 1`] = `
+<div>
+  <h3
+    className="MuiTypography-root MuiTypography-h4"
+    data-test="title"
+  >
+    Your Reminders
+  </h3>
+  <div
+    className="MuiPaper-root makeStyles-container-32 MuiPaper-elevation1 MuiPaper-rounded"
+  >
+    <h6
+      className="MuiTypography-root makeStyles-title-33 MuiTypography-h6"
+      data-test="title"
+    >
+      title1
+    </h6>
+    <p
+      className="MuiTypography-root makeStyles-body-34 MuiTypography-body1"
+      data-test="body"
+    >
+      body1
+    </p>
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-button-35 MuiButton-textSecondary"
+      data-test="button"
+      disabled={false}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        Delete
+      </span>
+    </button>
+  </div>
+  <div
+    className="MuiPaper-root makeStyles-container-32 MuiPaper-elevation1 MuiPaper-rounded"
+  >
+    <h6
+      className="MuiTypography-root makeStyles-title-33 MuiTypography-h6"
+      data-test="title"
+    >
+      title2
+    </h6>
+    <p
+      className="MuiTypography-root makeStyles-body-34 MuiTypography-body1"
+      data-test="body"
+    >
+      body2
+    </p>
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-button-35 MuiButton-textSecondary"
+      data-test="button"
+      disabled={false}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        Delete
+      </span>
+    </button>
+  </div>
+  <div
+    className="MuiPaper-root makeStyles-container-32 MuiPaper-elevation1 MuiPaper-rounded"
+  >
+    <h6
+      className="MuiTypography-root makeStyles-title-33 MuiTypography-h6"
+      data-test="title"
+    >
+      title3
+    </h6>
+    <p
+      className="MuiTypography-root makeStyles-body-34 MuiTypography-body1"
+      data-test="body"
+    >
+      body3
+    </p>
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-button-35 MuiButton-textSecondary"
+      data-test="button"
+      disabled={false}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        Delete
+      </span>
+    </button>
+  </div>
+</div>
+`;

@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
-import { LinkContext } from '../../context/linkContext';
+import { LinkContext } from '../context/linkContext';
 
-import LinkGroup from '../../components/LinkGroup/LinkGroup';
+import LinkGroup from '../components/LinkGroup/LinkGroup';
 
 const LinkHandler = () => {
   const { links, toggleLinkSettings } = useContext(LinkContext);
