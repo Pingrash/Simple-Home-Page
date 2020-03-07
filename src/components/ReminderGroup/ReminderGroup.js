@@ -3,12 +3,16 @@ import PropTypes from 'prop-types';
 import Reminder from '../Reminder/Reminder';
 
 import Typography from '@material-ui/core/Typography';
+import Divider from '@material-ui/core/Divider';
 import { makeStyles } from '@material-ui/styles';
 
 const useStyles = makeStyles(theme => ({
   noReminder: {
     textAlign: 'center',
     margin: '2rem'
+  },
+  divider: {
+    marginBottom: '3rem'
   }
 }));
 
@@ -34,6 +38,7 @@ const ReminderGroup = ({
 
   return (
     <div>
+      <Divider className={classes.divider} />
       <Typography component='h3' variant='h4' data-test='title'>
         Your Reminders
       </Typography>
